@@ -41,6 +41,8 @@ gem 'bulma-rails', '~> 0.7.4'
 gem 'simple_form', '~> 4.1'
 # https://github.com/plataformatec/devise
 gem 'devise', '~> 4.6', '>= 4.6.2'
+# https://www.rubydoc.info/gems/font-awesome-sass/5.8.1
+gem 'font-awesome-sass', '~> 5.8', '>= 5.8.1'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
