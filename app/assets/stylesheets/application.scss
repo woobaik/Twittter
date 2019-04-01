@@ -1,3 +1,14 @@
 @import "bulma";
 @import "font-awesome-sprockets";
 @import "font-awesome";
+
+body { 
+    font-family: Helvetica Neue;
+}
+
+.navbar {
+    border: 1px solid #b1b5bc;
+}
+.navbar-icon {
+    color: #38A1F3;
+}

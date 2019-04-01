@@ -15,19 +15,31 @@
   <div id="navbarBasicExample" class="navbar-menu">
     <div class="navbar-start">
       <a class="navbar-item">
+        <span class="navbar-icon">
+            <i class="fas fa-home"></i>
+        </span>&nbsp;
         Home
       </a>
 
       <a class="navbar-item">
+        <span class="navbar-icon">
+            <i class="fas fa-bolt"></i>
+        </span>&nbsp;
         Moment
       </a>
 
       <a class="navbar-item">
+        <span class="navbar-icon">
+            <i class="far fa-bell"></i>
+        </span>&nbsp;
         Alert
       </a>
 
       <a class="navbar-item">
-        Mail
+        <span class="navbar-icon">
+            <i class="far fa-envelope"></i>
+        </span>&nbsp;
+        Inbox
       </a>
 
       <div class="navbar-item has-dropdown is-hoverable">
@@ -52,6 +64,24 @@
         </div>
       </div>
     </div>
+<%# bd-tw-button button %>
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="field is-grouped">
+          <p class="control">
+            <a class="bd-tw-button button is-info" href=<%= new_tweeet_path %> >
+              <span class="icon">
+                <i class="fab fa-twitter"></i>
+              </span>
+              <span>
+                New Tweeet
+              </span>
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+
 
     <div class="navbar-end">
       <div class="navbar-item">
