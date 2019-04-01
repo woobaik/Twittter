@@ -10,9 +10,15 @@
   </head>
 
   <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-
+    <% if flash[:notice] %>
+      <div class="notification is-primary is-full">
+        <%= notice %>
+      </div>
+    <% elsif flash[:alert]%>
+      <div class="notification is-danger is-full">
+      <%= alert %>
+    <% end %>
+    <%= render 'layouts/naviation' %>
     <%= yield %>
   </body>
 </html>
