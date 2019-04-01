@@ -28,16 +28,73 @@
               <br>
               <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
             </div>
+
+            <div class="content">
+              <nav class="panel">
+                <p class="panel-heading">
+                  TRANDING FOR ME
+                </p>
+                <a class="panel-block">
+                  <span class="panel-icon">
+                    <i class="fas fa-book" aria-hidden="true"></i>
+                  </span>
+                  bulma
+                </a>
+                <a class="panel-block">
+                  <span class="panel-icon">
+                    <i class="fas fa-book" aria-hidden="true"></i>
+                  </span>
+                  marksheet
+                </a>
+                <a class="panel-block">
+                  <span class="panel-icon">
+                    <i class="fas fa-book" aria-hidden="true"></i>
+                  </span>
+                  minireset.css
+                </a>
+                <a class="panel-block">
+                  <span class="panel-icon">
+                    <i class="fas fa-book" aria-hidden="true"></i>
+                  </span>
+                  jgthms.github.io
+                </a>
+                <a class="panel-block">
+                  <span class="panel-icon">
+                    <i class="fas fa-code-branch" aria-hidden="true"></i>
+                  </span>
+                  daniellowtw/infboard
+                </a>
+                <a class="panel-block">
+                  <span class="panel-icon">
+                    <i class="fas fa-code-branch" aria-hidden="true"></i>
+                  </span>
+                  mojs
+                </a>
+                <label class="panel-block">
+                  <input type="checkbox">
+                  remember me
+                </label>
+                <div class="panel-block">
+                  <button class="button is-link is-outlined is-fullwidth">
+                    reset all filters
+                  </button>
+                </div>
+              </nav>
+            </div>
           </div>
       </div>
       </article>
+      
     </div>
     <div class="tile is-parent is-6">
       <article class="tile is-child box">
         <p class="title">Thirteen</p>
         <p class="subtitle">Subtitle</p>
-        <div class="content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+            <%= render 'form' %>
+        <div>
+          <%= @tweeets.each do |tweeet| %>
+            <%= tweeet.tweeet %>
+          <% end %>
         </div>
       </article>
     </div>
